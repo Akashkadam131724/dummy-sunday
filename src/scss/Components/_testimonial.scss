@@ -1,0 +1,124 @@
+.testimony {
+  font-family: var(--font-style);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.24px;
+  letter-spacing: 0.05em;
+
+  color: #db2f2c;
+}
+.testimony-hr {
+  width: 54px;
+  height: 1px;
+  border: 1px solid #ef001c;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 10px;
+  max-width: 100%;
+  align-items: center;
+  margin-bottom: 100px;
+
+  @media #{$mobile-device} {
+    grid-template-columns: 100%;
+  }
+}
+
+.image-container {
+  width: 484px;
+  height: 517px;
+
+  @media #{$mobile-device} {
+    width: 100%;
+  }
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.frame-description {
+  width: 634px;
+  height: 205px;
+  font-family: var(--font-style);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: -0.003em;
+
+  color: #111010;
+  flex: 1;
+
+  @media #{$mobile-device} {
+    display: none;
+  }
+}
+
+.frame-role {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.frame-title {
+  font-family: var(--font-style);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+
+  color: #111010;
+}
+.frame-company {
+  font-family: var(--font-style);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.frame-role-title {
+  font-family: var(--font-style);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+
+  color: #111010cc;
+}
+
+.button-container {
+  display: flex;
+  gap: 5px;
+  margin-top: 16px;
+}
+
+button.prev,
+button.next {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+button.prev,
+button.next {
+  width: 66.31px;
+  height: 50.31px;
+  border-radius: 34px;
+  border: 1.6px solid #111010;
+}
+
+button.next {
+  background: #ef001c;
+  color: #fff;
+  border: none;
+}
